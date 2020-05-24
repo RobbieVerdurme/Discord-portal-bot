@@ -1,10 +1,15 @@
 // IMPORT
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+const GphApiClient = require('giphy-js-sdk-core')
+
+// config file
+const { prefix, token, giphyToken } = require('./config.json');
 
 // create a new Discord client
 const client = new Discord.Client();
+// create a new giphy client
+giphy = GphApiClient(giphyToken)
 
 // create a new Discord Collections
 client.commands = new Discord.Collection();
@@ -73,7 +78,7 @@ client.on('message', message => {
 
     // execute the command
     try {
-        command.execute(message, args);
+        command.execute(message, args, giphy);
     } catch (error) {
         console.error(error);
         message.reply('there was an error trying to execute that command!');
