@@ -1,0 +1,13 @@
+{
+  "name": "portal-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Robbie Verdurme",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "giphy-js-sdk-core": "^1.0.6"
+  }
+}
