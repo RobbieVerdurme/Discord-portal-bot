@@ -13,21 +13,9 @@ npm install
 node index.js
 ```
 
-## Guide
-This was completed threw the guilde
- - https://discordjs.guide/
-
 ## Add portal-bot to server
 To add the bot to your server click the following link:
 https://discord.com/oauth2/authorize?client_id=713703896534482944&scope=bot&permissions=8
-
-## Configure
-Discord bot:
-- https://discord.com/developers/applications
-
-Giphy:
-- https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/frequently-asked-questions.md
-- https://developers.giphy.com/dashboard/
 
 
 ## Build with
