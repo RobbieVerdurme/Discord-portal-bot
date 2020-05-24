@@ -2,7 +2,7 @@
 This is a portal bot that has some custom commands.
 
 ## Change
-Look at [CHANGELOG]()
+Look at [CHANGELOG](https://github.com/RobbieVerdurme/Discord-Portal-bot/blob/master/CHANGELOG.md)
 
 ## Build setup
 ``` bash
