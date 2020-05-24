@@ -1,12 +1,7 @@
-var GphApiClient = require('giphy-js-sdk-core')
-const { giphyToken } = require('../config.json');
-
-giphy = GphApiClient(giphyToken)
-
 module.exports = {
     name: 'portal',
     description: 'Portal do an other dimension!',
-    execute(message, args) {
+    execute(message, args, giphy) {
         const randomNumberDimension = Math.round(Math.random() * 1000)
         message.guild.channels.create(`dimension-${randomNumberDimension}`).then(channel => {
             // set topic channel
