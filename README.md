@@ -19,7 +19,7 @@ https://discord.com/oauth2/authorize?client_id=713703896534482944&scope=bot&perm
 
 
 ## Build with
-- Discord.js: 
+- Discord.js: https://discord.js.org/
 - Giphy-js-sdk-core: https://github.com/Giphy/giphy-js-sdk-core
 
 ## Authors
