@@ -11,7 +11,7 @@ module.exports = {
         const role = message.member.roles.cache.find(role => role.name === message.channel.name)
 
         // check channel
-        if (message.channel.name.includes(channels)) {
+        if (channels.includes(message.channel.name)) {
             message.channel.send('You can\'t delete the this channel')
 
             // check member has role
