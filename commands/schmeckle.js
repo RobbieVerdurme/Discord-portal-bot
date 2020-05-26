@@ -3,6 +3,7 @@ const { channels } = require('../config.json');
 module.exports = {
     name: 'schmeckle',
     description: 'This command removes the secure channel',
+    usage: '',
     execute(message, args) {
         const { cache } = message.guild.roles
         const role = cache.find(role => role.name.toLowerCase() === 'rick')
