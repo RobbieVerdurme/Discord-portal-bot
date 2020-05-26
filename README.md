@@ -17,7 +17,7 @@ node index.js
 
 ## Add portal-bot to server
 To add the bot to your server click the following link:
-https://discord.com/oauth2/authorize?client_id=713703896534482944&scope=bot&permissions=8
+https://discord.com/oauth2/authorize?client_id=713703896534482944&scope=bot&permissions=268565552
 
 
 ## Build with
