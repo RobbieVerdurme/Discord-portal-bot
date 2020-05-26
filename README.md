@@ -5,6 +5,8 @@ This is a portal bot that has some custom commands.
 Look at [CHANGELOG](https://github.com/RobbieVerdurme/Discord-Portal-bot/blob/master/CHANGELOG.md)
 
 ## Build setup
+Make sure you are running node 12.17 and discord.js 12.2.0 or up
+
 ``` bash
 # install dependencies
 npm install
