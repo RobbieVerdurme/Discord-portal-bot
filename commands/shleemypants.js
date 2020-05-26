@@ -2,6 +2,7 @@ module.exports = {
     name: 'shleemypants',
     description: 'Deletes a given number of messages in the current channel',
     usage: 'number',
+    guildOnly: true,
     args: true,
     async execute(message, args) {
         // check if args is a number

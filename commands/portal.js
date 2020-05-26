@@ -2,6 +2,7 @@ module.exports = {
     name: 'portal',
     description: 'Portal do an other dimension!',
     usage: '',
+    guildOnly: true,
     async execute(message, args, giphy) {
         const randomNumberDimension = Math.round(Math.random() * 1000)
 

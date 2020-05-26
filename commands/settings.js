@@ -5,6 +5,7 @@ module.exports = {
     name: 'settings',
     description: 'Gives all posible commands',
     usage: '',
+    guildOnly: false,
     execute(message, args, giphy, commands) {
         // configure default messageSettings
         const embedMessageSettings = new Discord.MessageEmbed()

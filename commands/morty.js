@@ -4,6 +4,7 @@ module.exports = {
     name: 'morty',
     description: 'This adds the channel so it can no longer be deleted by the bot',
     usage: '',
+    guildOnly: true,
     execute(message) {
         const role = message.member.roles.cache.find(role => role.name === 'rick')
 

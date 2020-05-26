@@ -4,6 +4,7 @@ module.exports = {
     name: 'schmeckle',
     description: 'This command removes the secure channel',
     usage: '',
+    guildOnly: true,
     execute(message) {
         const role = message.member.roles.cache.find(role => role.name === 'rick')
 

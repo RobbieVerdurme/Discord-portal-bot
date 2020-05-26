@@ -8,6 +8,7 @@ module.exports = {
     name: 'close',
     description: 'close the current channel if it is not secured',
     usage: '',
+    guildOnly: true,
     async execute(message) {
         const role = message.member.roles.cache.find(role => role.name === message.channel.name)
 
