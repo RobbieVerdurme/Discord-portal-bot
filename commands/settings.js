@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const { prefix } = require('../config.json')
 
 module.exports = {
     name: 'settings',
@@ -6,6 +7,7 @@ module.exports = {
     execute(message, args, giphy, commands) {
         // configure default messageSettings
         const embedMessageSettings = new Discord.MessageEmbed()
+            .setColor('#2ed224')
             .setTitle('Settings')
             .setDescription('Here are all the different commands you can use')
             .setFooter('Thanks for using portal-bot')
@@ -15,8 +17,8 @@ module.exports = {
             let props = require(`./${f.name}.js`)
 
             embedMessageSettings.addField(
-                `**${props.name}**`,
-                `${props.description} \n ${props.usage}`
+                props.name,
+                props.description + `\n \`${prefix}${props.name} ${props.usage}\``
             )
         });
 
