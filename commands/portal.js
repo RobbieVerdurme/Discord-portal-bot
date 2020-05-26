@@ -2,8 +2,10 @@ module.exports = {
     name: 'portal',
     description: 'Portal do an other dimension!',
     usage: '',
-    execute(message, args, giphy) {
+    async execute(message, args, giphy) {
         const randomNumberDimension = Math.round(Math.random() * 1000)
+
+        // CREATE CHANNEL
         message.guild.channels.create(`dimension-${randomNumberDimension}`).then(channel => {
             // set topic channel
             channel.setTopic(`Welcome to dimension ${randomNumberDimension}`)
@@ -24,5 +26,18 @@ module.exports = {
                 channel.send('I\'m to drunk for this shit')
             })
         })
+
+        // CREATE ROLE
+        const role = await message.guild.roles.create({
+            data: {
+                name: `dimension-${randomNumberDimension}`,
+                color: 'GREEN'
+            },
+            reason: `You are admin of the dimension-${randomNumberDimension} now`
+        })
+
+        // ADD ROLE TO USER
+        message.member.roles.add(role.id)
+
     },
 };

@@ -9,14 +9,26 @@ module.exports = {
     description: 'close the current channel if it is not secured',
     usage: '',
     async execute(message, args) {
-        if (message.channel.name.includes(channels)) {
-            message.channel.send('You can\'t delete the this channel')
-        } else {
-            const millisecondsSleep = 10000
+        const role = message.member.roles.cache.find(role => role.name === message.channel.name)
 
-            message.channel.send('That\'s enough for today lets watch some interdimensional cable');
-            await sleep(millisecondsSleep)
-            message.channel.delete().catch(console.log)
+        if (role) {
+            // check channel
+            if (channels.includes(message.channel.name)) {
+                message.channel.send('You can\'t delete the this channel')
+
+                // check member has role
+            } else if (message.member.roles.cache.has(role.id)) {
+                const millisecondsSleep = 10000
+
+                message.channel.send('That\'s enough for today lets watch some interdimensional cable');
+                await sleep(millisecondsSleep)
+
+                role.delete()
+                message.channel.delete().catch(console.log)
+
+            } else {
+                message.channel.send('You don\'t have the right role to delete this channel')
+            }
         }
     }
-};
+}
