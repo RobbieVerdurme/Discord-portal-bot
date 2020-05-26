@@ -6,7 +6,8 @@ const sleep = (milliseconds) => {
 
 module.exports = {
     name: 'close',
-    description: 'close portal',
+    description: 'close the current channel if it is not secured',
+    usage: '',
     async execute(message, args) {
         const role = message.member.roles.cache.find(role => role.name === message.channel.name)
 
