@@ -1,6 +1,7 @@
 module.exports = {
     name: 'portal',
     description: 'Portal do an other dimension!',
+    usage: '',
     execute(message, args, giphy) {
         const randomNumberDimension = Math.round(Math.random() * 1000)
         message.guild.channels.create(`dimension-${randomNumberDimension}`).then(channel => {

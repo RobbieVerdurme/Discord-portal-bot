@@ -3,7 +3,8 @@ const { prefix } = require('../config.json')
 
 module.exports = {
     name: 'settings',
-    description: 'settings page',
+    description: 'Gives all posible commands',
+    usage: '',
     execute(message, args, giphy, commands) {
         // configure default messageSettings
         const embedMessageSettings = new Discord.MessageEmbed()
