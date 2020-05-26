@@ -1,6 +1,6 @@
 module.exports = {
     name: 'shleemypants',
-    description: 'Deletes last message then itself',
+    description: 'Deletes a given number of messages in the current channel',
     usage: 'number',
     args: true,
     async execute(message, args) {
