@@ -1,7 +1,5 @@
 {
     "prefix": "!",
-    "token": "env.DISCORDTOKEN",
-    "giphyToken": "env.GIPHYTOKEN",
     "channels": [
         "general"
     ]

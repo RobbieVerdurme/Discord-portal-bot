@@ -4,12 +4,13 @@ const Discord = require('discord.js');
 const GphApiClient = require('giphy-js-sdk-core')
 
 // config file
-const { prefix, token, giphyToken } = require('./config.json');
+const { prefix } = require('./config.json');
+const { env } = require('process');
 
 // create a new Discord client
 const client = new Discord.Client();
 // create a new giphy client
-giphy = GphApiClient(giphyToken)
+giphy = GphApiClient(env.GIPHYTOKEN)
 
 // create a new Discord Collections
 client.commands = new Discord.Collection();
@@ -85,4 +86,4 @@ client.on('message', message => {
     }
 });
 // login to Discord with your app's token
-client.login(token);
+client.login(env.DISCORDTOKEN);
