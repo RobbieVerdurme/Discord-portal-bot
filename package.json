@@ -1,7 +1,7 @@
 {
   "name": "portal-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "a discord bot inspired on the Rick and Morty tv show",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
