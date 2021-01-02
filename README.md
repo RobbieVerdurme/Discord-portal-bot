@@ -1,3 +1,5 @@
+>> :warning: THIS BOT IS OFFLINE :warning:
+
 ## Discord protal bot
 This discord bot is inspired by the Rick and Morty tv show. It can create a channel in discord to another dimension and only the creator can close that portal again. The bot can also do some other cool stuff like managing messages, add or delete channels,...
 
